@@ -9,34 +9,28 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/btn_tens"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="100dp"
             android:layout_weight="1"
-            android:backgroundTint="@android:color/holo_orange_dark"
-            android:text="@string/tens"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline3" />
+            android:text="@string/tens" />
 
         <Button
             android:id="@+id/btn_bipolar"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="100dp"
             android:layout_weight="1"
-            android:backgroundTint="@android:color/holo_green_dark"
-            android:text="@string/bipolar"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline3" />
+            android:text="@string/bipolar" />
 
         <Button
             android:id="@+id/btn_nmes"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="100dp"
             android:layout_weight="1"
-            android:backgroundTint="@android:color/holo_blue_dark"
-            android:text="@string/nmes"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline3" />
+            android:text="@string/nmes" />
     </LinearLayout>
 
 </LinearLayout>
