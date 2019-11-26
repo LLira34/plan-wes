@@ -23,4 +23,11 @@
     <string name="accept">Aceptar</string>
     <string name="wavelength">Longitud de onda</string>
     <string name="frequency">Frecuencia</string>
+
+    <!-- Combo box channels -->
+    <string-array name="channels_array">
+        <item>Canales</item>
+        <item>Independiente</item>
+        <item>Simultaneo</item>
+    </string-array>
 </resources>

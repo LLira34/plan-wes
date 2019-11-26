@@ -10,6 +10,7 @@ public class BipolarModulationActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        setTheme(R.style.DialogCustomTheme);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dialog_bipolar_modulation);
     }

@@ -64,13 +64,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Tiempo de tratamiento"
-                    app:errorEnabled="true">
+                    app:errorEnabled="true"
+                    app:helperText="seg/min (60 min)">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/name_edit_text"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="seg/min (60 min)" />
+                        android:inputType="number" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <Button
@@ -84,31 +85,29 @@
                     style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:onClick="bipolarModulation"
                     android:text="Modulaciones" />
 
-                <TextView
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Canales"
-                    android:textSize="20sp" />
-
-                <Spinner
-                    android:id="@+id/channels_spinner"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content" />
-
-                <View
-                    android:id="@+id/separator"
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
                     android:layout_marginBottom="10dp"
-                    android:background="@android:color/darker_gray" />
+                    android:background="@drawable/bg_dropdown"
+                    android:orientation="vertical">
+
+                    <Spinner
+                        android:id="@+id/spi_channels"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:overlapAnchor="false"
+                        android:spinnerMode="dropdown" />
+                </LinearLayout>
 
                 <TextView
                     android:id="@+id/tv"
                     android:layout_width="fill_parent"
                     android:layout_height="150dp"
-                    android:background="@drawable/bg_sum"
+                    android:background="@drawable/bg_summary"
                     android:text="@string/summary"
                     android:textAlignment="center"
                     android:textColor="#9c9c9c"

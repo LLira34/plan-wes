@@ -13,6 +13,7 @@ import android.widget.Spinner;
 import net.loviedo.planwes.R;
 
 public class BipolarActivity extends AppCompatActivity {
+    private Spinner spiChannels;
     private ImageButton btnBack;
 
     @Override
@@ -35,16 +36,21 @@ public class BipolarActivity extends AppCompatActivity {
             }
         });
         // Inflate spinner
-        Spinner spinner = findViewById(R.id.channels_spinner);
+        spiChannels = findViewById(R.id.spi_channels);
         ArrayAdapter<CharSequence> adapter =
                 ArrayAdapter.createFromResource(this, R.array.channels_array,
                         android.R.layout.simple_spinner_dropdown_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner.setAdapter(adapter);
+        spiChannels.setAdapter(adapter);
     }
 
     public void bipolarParameter(View v) {
         Intent i = new Intent(this, BipolarParameterActivity.class);
+        startActivity(i);
+    }
+
+    public void bipolarModulation(View v) {
+        Intent i = new Intent(this, BipolarModulationActivity.class);
         startActivity(i);
     }
 
