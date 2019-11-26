@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorBg"
     android:orientation="vertical"
-    tools:context=".activities.TensActivity">
+    tools:context=".activities.BipolarActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -37,7 +37,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="@string/tens" />
+                android:text="@string/bipolar" />
         </LinearLayout>
     </androidx.appcompat.widget.Toolbar>
 
@@ -70,22 +70,20 @@
                         android:id="@+id/name_edit_text"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="seg/min (60 min)"
-                        android:inputType="number" />
+                        android:hint="seg/min (60 min)" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <Button
                     style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:onClick="tensParameter"
+                    android:onClick="bipolarParameter"
                     android:text="Parametro" />
 
                 <Button
                     style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:onClick="tensModulation"
                     android:text="Modulaciones" />
 
                 <TextView

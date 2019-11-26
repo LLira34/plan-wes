@@ -10,6 +10,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".activities.BipolarModulationActivity"></activity>
+        <activity
+            android:name=".activities.BipolarParameterActivity"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity android:name=".activities.BipolarActivity" />
+        <activity
+            android:name=".activities.TensModulationActivity"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity
+            android:name=".activities.TensParameterActivity"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity android:name=".activities.TensActivity" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".activities.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,13 +30,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".activities.TensParameterActivity"
-            android:theme="@style/Theme.AppCompat.Dialog" />
-        <activity
-            android:name=".activities.TensActivity"
-            android:parentActivityName=".MainActivity" />
-        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>

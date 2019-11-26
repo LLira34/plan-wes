@@ -6,13 +6,12 @@ import android.os.Bundle;
 
 import net.loviedo.planwes.R;
 
-public class TensParameterActivity extends AppCompatActivity {
+public class BipolarModulationActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        setTheme(R.style.DialogCustomTheme); //this line i added
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.dialog_tens_parameter);
+        setContentView(R.layout.dialog_bipolar_modulation);
     }
 
 }//End class

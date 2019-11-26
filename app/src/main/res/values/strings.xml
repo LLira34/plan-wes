@@ -1,15 +1,13 @@
 <resources>
     <string name="app_name">WES</string>
 
-    <!-- Toolbar -->
+    <!-- New strings -->
     <string name="about_software">Acerca del software</string>
     <string name="security">Seguridad</string>
     <string name="language">Idioma</string>
     <string name="favorites">Favoritos</string>
     <string name="summary">Resumen</string>
-    <string name="please_tens_parameter">Por favor, ajuste los parámetros de frecuencia y longitud del pulso</string>
-
-    <!-- Screen splash -->
+    <string name="please_tens_parameter">Ajuste los parámetros</string>
     <string name="wes">Wireless Electrical Stimulator</string>
     <string name="copyright">Derechos Reservados</string>
     <string name="version">Versión 1.0</string>
@@ -21,4 +19,8 @@
     <string name="exit">Salir</string>
     <string name="start">Iniciar</string>
     <string name="logo_app">Logo app</string>
+    <string name="cancel">Cancelar</string>
+    <string name="accept">Aceptar</string>
+    <string name="wavelength">Longitud de onda</string>
+    <string name="frequency">Frecuencia</string>
 </resources>

@@ -12,13 +12,13 @@ import android.widget.Spinner;
 
 import net.loviedo.planwes.R;
 
-public class TensActivity extends AppCompatActivity {
+public class BipolarActivity extends AppCompatActivity {
     private ImageButton btnBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tens);
+        setContentView(R.layout.activity_bipolar);
 
         // Toolbar
         Toolbar toolbar = findViewById(R.id.toolbar);
@@ -43,14 +43,9 @@ public class TensActivity extends AppCompatActivity {
         spinner.setAdapter(adapter);
     }
 
-    public void tensParameter(View v) {
-        Intent i = new Intent(this, TensParameterActivity.class);
+    public void bipolarParameter(View v) {
+        Intent i = new Intent(this, BipolarParameterActivity.class);
         startActivity(i);
-    }
-
-    public void tensModulation(View v) {
-        Intent intent = new Intent(this, TensModulationActivity.class);
-        startActivity(intent);
     }
 
 }//End class
