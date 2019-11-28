@@ -11,11 +11,11 @@
     <ImageButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/img_tens_parameter" />
+        android:src="@drawable/im_tens_parameter" />
 
     <ImageButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/img_tens_parameter" />
+        android:src="@drawable/im_tens_parameter" />
 
 </LinearLayout>

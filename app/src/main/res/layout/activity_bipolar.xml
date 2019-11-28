@@ -24,7 +24,8 @@
         android:orientation="vertical"
         android:padding="15dp">
 
-        <androidx.cardview.widget.CardView
+        <com.google.android.material.card.MaterialCardView
+            style="@style/Widget.MaterialComponents.CardView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp">
@@ -85,6 +86,7 @@
                     android:layout_width="fill_parent"
                     android:layout_height="150dp"
                     android:background="@drawable/bg_summary"
+                    android:gravity="center"
                     android:text="@string/summary"
                     android:textAlignment="center"
                     android:textColor="#9c9c9c"
@@ -114,7 +116,7 @@
                         android:text="@string/start" />
                 </LinearLayout>
             </LinearLayout>
-        </androidx.cardview.widget.CardView>
+        </com.google.android.material.card.MaterialCardView>
 
     </LinearLayout>
 
