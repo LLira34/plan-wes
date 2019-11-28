@@ -12,18 +12,22 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".activities.BipolarModulationActivity"
-            android:theme="@style/Theme.AppCompat.Dialog"></activity>
+            android:theme="@style/Theme.AppCompat.Dialog" />
         <activity
             android:name=".activities.BipolarParameterActivity"
             android:theme="@style/Theme.AppCompat.Dialog" />
-        <activity android:name=".activities.BipolarActivity" />
+        <activity
+            android:name=".activities.BipolarActivity"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".activities.TensModulationActivity"
             android:theme="@style/Theme.AppCompat.Dialog" />
         <activity
             android:name=".activities.TensParameterActivity"
             android:theme="@style/Theme.AppCompat.Dialog" />
-        <activity android:name=".activities.TensActivity" />
+        <activity
+            android:name=".activities.TensActivity"
+            android:parentActivityName=".MainActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".activities.SplashActivity">
             <intent-filter>
