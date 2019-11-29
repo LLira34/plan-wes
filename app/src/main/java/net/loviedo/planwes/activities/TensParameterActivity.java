@@ -61,6 +61,7 @@ public class TensParameterActivity extends AppCompatActivity {
             }
         });
 
+
         minFre.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
