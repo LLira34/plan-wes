@@ -53,27 +53,32 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <Button
-                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-                    android:layout_width="wrap_content"
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_less_fre"
+                    android:background="@drawable/bg_btn_left"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="-"
                     android:textSize="20sp" />
 
                 <EditText
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
+                    android:id="@+id/edt_parameters_fre"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_edt_parameters"
                     android:layout_weight="1"
                     android:inputType="number"
+                    android:maxLength="3"
                     android:text="0"
-                    android:textAlignment="center"
+                    android:gravity="center"
                     android:textSize="20sp" />
 
-                <Button
-                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-                    android:layout_width="wrap_content"
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_plus_fre"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@drawable/bg_btn_right"
                     android:layout_weight="1"
                     android:text="+"
                     android:textSize="20sp" />
@@ -90,7 +95,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="0 - 500us"
+                android:text="0 - 500µs"
                 android:textAlignment="center" />
 
             <LinearLayout
@@ -98,27 +103,32 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <Button
-                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-                    android:layout_width="wrap_content"
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_less_long"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@drawable/bg_btn_left"
                     android:layout_weight="1"
                     android:text="-"
                     android:textSize="20sp" />
 
                 <EditText
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
+                    android:id="@+id/edt_parameters_long"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_edt_parameters"
                     android:layout_weight="1"
                     android:inputType="number"
                     android:text="0"
-                    android:textAlignment="center"
+                    android:maxLength="3"
+                    android:gravity="center"
                     android:textSize="20sp" />
 
-                <Button
-                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-                    android:layout_width="wrap_content"
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_plus_long"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@drawable/bg_btn_right"
                     android:layout_weight="1"
                     android:text="+"
                     android:textSize="20sp" />
