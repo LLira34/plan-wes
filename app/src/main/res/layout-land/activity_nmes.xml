@@ -4,15 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_orange_dark"
+    android:background="@color/colorBg"
     android:orientation="vertical"
-    tools:context=".activities.TensActivity">
+    tools:context=".activities.NMESActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
+        android:gravity="center"
         android:minHeight="?attr/actionBarSize"
         app:titleTextColor="@android:color/white">
 
@@ -53,16 +54,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
-                android:onClick="tensParameter"
                 android:text="Parametro" />
-
-            <Button
-                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="15dp"
-                android:onClick="tensModulation"
-                android:text="Modulaciones" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -78,6 +70,7 @@
                     android:overlapAnchor="false"
                     android:spinnerMode="dropdown" />
             </LinearLayout>
+
         </LinearLayout>
 
         <LinearLayout
@@ -91,10 +84,10 @@
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:elevation="@dimen/cardview_default_radius">
+                android:elevation="8dp">
 
                 <TextView
-                    android:id="@+id/tv"
+                    android:id="@+id/lbl_summary"
                     android:layout_width="fill_parent"
                     android:layout_height="250dp"
                     android:gravity="center"
@@ -109,9 +102,9 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
                 android:gravity="right"
-                android:orientation="horizontal"
-                android:padding="15dp">
+                android:orientation="horizontal">
 
                 <Button
                     android:id="@+id/btn_exit"

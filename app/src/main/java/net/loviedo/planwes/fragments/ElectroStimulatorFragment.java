@@ -12,11 +12,12 @@ import android.widget.Button;
 
 import net.loviedo.planwes.R;
 import net.loviedo.planwes.activities.BipolarActivity;
+import net.loviedo.planwes.activities.NMESActivity;
 import net.loviedo.planwes.activities.TensActivity;
 
 public class ElectroStimulatorFragment extends Fragment {
     private View view;
-    private Button btnTens, btnBipolar;
+    private Button btnTens, btnBipolar, btnNmes;
 
     public ElectroStimulatorFragment() {
         // Required empty public constructor
@@ -40,6 +41,14 @@ public class ElectroStimulatorFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(getActivity(), BipolarActivity.class);
+                startActivity(i);
+            }
+        });
+        btnNmes = view.findViewById(R.id.btn_nmes);
+        btnNmes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getActivity(), NMESActivity.class);
                 startActivity(i);
             }
         });
